@@ -1,0 +1,15 @@
+﻿langkah,area,aturan,baris_masuk,baris_keluar,baris_terkait,catatan
+01,Akuisisi,Ambil CLEAN pada commit tetap,20848,20848,0,Seluruh pesanan dipertahankan; sumber bukan RAW_PUBLIC.
+02,Tanggal,Baca timestamp valid sebagai tanggal/jam,20848,20848,18868,Konversi tipe; tidak menebak zona waktu.
+03,Tanggal kosong,Pertahankan kosong,20848,20848,1980,Des2024 1214; Jul2025 766; hari/jam tidak diimputasi.
+04,Bulan laporan,MapBulan dari source_file,20848,20848,20848,"Awal bulan adalah kunci periode, bukan tanggal transaksi."
+05,Status,MapStatus,20848,20848,250,250 belum final; Selesai17768 dan Batal2830 dipisahkan.
+06,Metode,MapBayar label pendek,20848,20848,Lihat MapBayar,Online Payment tidak ditebak menjadi metode spesifik.
+07,Wilayah,MapProvinsi dan trim kota,20848,20848,20848,Huruf dan singkatan dibersihkan; wilayah sumber tidak direalokasi.
+08,Kategori,Keranjang eksklusif,20848,20848,1504,Pesanan dengan >1 kategori menjadi Multi-kategori.
+09,Kurir,MapKurir dari opsi pengiriman,20848,20848,20848,Tidak tercantum jika penyedia tidak disebut.
+10,Alasan,MapBatal variasi bahasa,20848,20848,2830,Kelompok alasan hanya untuk pesanan batal.
+11,Nominal,Pertahankan seluruh angka CLEAN,20848,20848,0,Tidak menebak koreksi skala diskon atau selisih ongkir.
+12,Anomali,Flag subsidi lebih estimasi,20848,20848,17,Dipertahankan; tidak otomatis menjadi kesalahan transaksi.
+13,Duplikat,Audit order_id pada CLEAN,20848,20848,0,Tidak ada duplikat; tidak menghapus baris.
+14,Rumus,Tambahkan 8 kolom Excel AA:AH,20848,20848,20848,"Rumus pembayaran, unit, retur dan pemeriksaan tanggal."

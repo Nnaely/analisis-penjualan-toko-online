@@ -1,0 +1,20 @@
+# File kerja lokal
+~$*
+*.tmp
+*.log
+*.inspect.ndjson
+__pycache__/
+node_modules/
+
+# Audit lokal dan bahan yang tidak dipublikasikan
+_qa/
+RAW_PUBLIC/
+raw_review/
+*_DRAFT.*
+
+# Kredensial
+.env
+.env.*
+!.env.example
+*.pem
+*.key

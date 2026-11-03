@@ -1,0 +1,340 @@
+{
+  "version": "1.0",
+  "date": "2026-10-30",
+  "engine": "@oai/artifact-tool JavaScript",
+  "preparation": "Python / pandas; source read only",
+  "native_excel_tested": true,
+  "native_excel": {
+    "opened_read_only": true,
+    "headline": {
+      "B7": 20848.0,
+      "B11": 1045550734.0,
+      "B10": 250.0,
+      "B17": 1980.0,
+      "B9": 2830.0,
+      "B15": 157.0,
+      "B14": 44197.0,
+      "B16": 370.0,
+      "B8": 17768.0
+    },
+    "version": "16.0",
+    "saved_changes": false,
+    "tests": [
+      "Open XLSX without repair",
+      "CalculateFullRebuild",
+      "Headline totals",
+      "Payment +1000 propagation",
+      "Selesai to Batal propagation",
+      "Blank date propagation",
+      "All original values restored"
+    ],
+    "success": true,
+    "table_counts": {
+      "Kamus_Data": 1,
+      "Referensi": 6,
+      "Analisis": 8,
+      "Dokumentasi": 1,
+      "Kualitas": 1,
+      "Pesanan": 1
+    },
+    "engine": "Microsoft Excel"
+  },
+  "checks": {
+    "engine": "@oai/artifact-tool",
+    "checked": "2026-10-30",
+    "counts": {
+      "orders": 20848,
+      "monthly": 24,
+      "province": 34,
+      "payment": 12,
+      "category": 38,
+      "courier": 6
+    },
+    "metrics": {
+      "B7": 20848,
+      "B8": 17768,
+      "B9": 2830,
+      "B10": 250,
+      "B11": 1045550734,
+      "B12": 58844.5933138226,
+      "B13": 0.13574443591711435,
+      "B14": 44197,
+      "B15": 157,
+      "B16": 370,
+      "B17": 1980
+    },
+    "checks": [
+      "All headline metrics vs independent source controls",
+      "All 24 monthly order/status/payment/missing-date totals",
+      "Every dimension order/status/payment/unit result vs Python preparation",
+      "First/middle/last detail formula checks",
+      "Payment input +1000 propagated; restored",
+      "Status Selesai to Batal propagated; restored"
+    ]
+  },
+  "export_audit": {
+    "file": "Portofolio_Penjualan_Ecommerce_Indonesia.xlsx",
+    "sheets": [
+      "Analisis",
+      "Pesanan",
+      "Referensi",
+      "Kualitas",
+      "Kamus_Data",
+      "Dokumentasi"
+    ],
+    "table_count": 18,
+    "formula_count": 167899,
+    "error_cells": [],
+    "charts": 0,
+    "native_pivots": 0,
+    "external_links": 0,
+    "sheet_data": {
+      "Analisis": {
+        "rows": 195,
+        "cells": 2340,
+        "formulas": 1081,
+        "pane": {
+          "ySplit": "3",
+          "topLeftCell": "A4",
+          "activePane": "bottomLeft",
+          "state": "frozen"
+        }
+      },
+      "Pesanan": {
+        "rows": 20854,
+        "cells": 709036,
+        "formulas": 166784,
+        "pane": {
+          "xSplit": "1",
+          "ySplit": "6",
+          "topLeftCell": "B7",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        }
+      },
+      "Referensi": {
+        "rows": 102,
+        "cells": 1224,
+        "formulas": 0,
+        "pane": {
+          "ySplit": "3",
+          "topLeftCell": "A4",
+          "activePane": "bottomLeft",
+          "state": "frozen"
+        }
+      },
+      "Kualitas": {
+        "rows": 36,
+        "cells": 216,
+        "formulas": 34,
+        "pane": {
+          "ySplit": "6",
+          "topLeftCell": "A7",
+          "activePane": "bottomLeft",
+          "state": "frozen"
+        }
+      },
+      "Kamus_Data": {
+        "rows": 42,
+        "cells": 252,
+        "formulas": 0,
+        "pane": {
+          "xSplit": "1",
+          "ySplit": "6",
+          "topLeftCell": "B7",
+          "activePane": "bottomRight",
+          "state": "frozen"
+        }
+      },
+      "Dokumentasi": {
+        "rows": 42,
+        "cells": 126,
+        "formulas": 0,
+        "pane": {
+          "ySplit": "6",
+          "topLeftCell": "A7",
+          "activePane": "bottomLeft",
+          "state": "frozen"
+        }
+      }
+    },
+    "headline_cached_values": {
+      "B7": "20848",
+      "B8": "17768",
+      "B9": "2830",
+      "B10": "250",
+      "B11": "1045550734",
+      "B12": "58844.5933138226",
+      "B13": "0.13574443591711435",
+      "B14": "44197",
+      "B15": "157",
+      "B16": "370",
+      "B17": "1980"
+    },
+    "tables": [
+      {
+        "id": "2",
+        "name": "MetrikUtama",
+        "displayName": "MetrikUtama",
+        "ref": "A6:B17",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "3",
+        "name": "TrenBulanan",
+        "displayName": "TrenBulanan",
+        "ref": "A23:L47",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "4",
+        "name": "PerbandinganTahunan",
+        "displayName": "PerbandinganTahunan",
+        "ref": "A53:I55",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "5",
+        "name": "Dim_province",
+        "displayName": "Dim_province",
+        "ref": "A61:I95",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "6",
+        "name": "Dim_payment",
+        "displayName": "Dim_payment",
+        "ref": "A102:I114",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "7",
+        "name": "Dim_category",
+        "displayName": "Dim_category",
+        "ref": "A121:I159",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "8",
+        "name": "Dim_courier",
+        "displayName": "Dim_courier",
+        "ref": "A166:I172",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "9",
+        "name": "AlasanPembatalan",
+        "displayName": "AlasanPembatalan",
+        "ref": "A179:D192",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "1",
+        "name": "TblPesanan",
+        "displayName": "TblPesanan",
+        "ref": "A6:AH20854",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "10",
+        "name": "MapBulan",
+        "displayName": "MapBulan",
+        "ref": "A19:B43",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "11",
+        "name": "MapStatus",
+        "displayName": "MapStatus",
+        "ref": "E19:F30",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "12",
+        "name": "MapBayar",
+        "displayName": "MapBayar",
+        "ref": "H19:I31",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "13",
+        "name": "MapProvinsi",
+        "displayName": "MapProvinsi",
+        "ref": "K19:L53",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "14",
+        "name": "MapKurir",
+        "displayName": "MapKurir",
+        "ref": "A48:B93",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "15",
+        "name": "MapBatal",
+        "displayName": "MapBatal",
+        "ref": "E48:F66",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "16",
+        "name": "KontrolKualitas",
+        "displayName": "KontrolKualitas",
+        "ref": "A6:E23",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "17",
+        "name": "KamusKolom",
+        "displayName": "KamusKolom",
+        "ref": "A6:F40",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      },
+      {
+        "id": "18",
+        "name": "PanduanProyek",
+        "displayName": "PanduanProyek",
+        "ref": "A6:C30",
+        "headerRowCount": "1",
+        "totalsRowCount": "0",
+        "totalsRowShown": "0"
+      }
+    ]
+  },
+  "visual_review": "All 6 sheets rendered and reviewed; representative ranges include data and formula columns."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "path": "Portofolio_Penjualan_Ecommerce_Indonesia.xlsx",
+    "bytes": 4354723,
+    "sha256": "f560b1ff7b90c41b3c7502ca41616f64bfa0e13d2f0ace4352daa87bcffb1309"
+  },
+  {
+    "path": "README.md",
+    "bytes": 7238,
+    "sha256": "d58978e53af4c4e3ca4fbbee324d6b3c83196668e58cfd434590bc7346b29353"
+  },
+  {
+    "path": "LICENSE_DATA.txt",
+    "bytes": 7048,
+    "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+  },
+  {
+    "path": "data/all_months_clean.xlsx",
+    "bytes": 1942615,
+    "sha256": "288fd5a8417edf4170ce9ae5da801dc6680284aa761369d699b3ba8e9505caa1"
+  },
+  {
+    "path": "data/orders_source.csv",
+    "bytes": 3868583,
+    "sha256": "00b725351599f6bf6b86271f237af24dc13919c90a004ce6536c22d7ba94673f"
+  },
+  {
+    "path": "data/orders_prepared.csv",
+    "bytes": 5415144,
+    "sha256": "103a2d6cc0e5b53ec51d5050bee7b5c78fe0b585b9b0b2c1e96092100833f6fb"
+  },
+  {
+    "path": "data/source_manifest_clean.json",
+    "bytes": 2013,
+    "sha256": "3d49f7eb5435af7c4f148c3b60c9c14ba66262fcc00dc993a4b2871ae983c8d6"
+  },
+  {
+    "path": "scripts/impor_source.pq",
+    "bytes": 1456,
+    "sha256": "3a12f3ec584242e6f26f1b9741fddd41f528cad5bad136e6c1677b7c682bea17"
+  },
+  {
+    "path": "docs/CATATAN_DASHBOARD.md",
+    "bytes": 2516,
+    "sha256": "4c4860bb4bf16669a764ced8242fd8fa93ba4c1fff678eb46c55be8d08bcff91"
+  },
+  {
+    "path": "docs/LANGKAH_EXCEL.md",
+    "bytes": 3890,
+    "sha256": "90181e3ab8833af809b032d50aec63bae13f473f19031cbe4cab35799c62e7cf"
+  },
+  {
+    "path": "docs/LOG_PERSIAPAN_DATA.csv",
+    "bytes": 1595,
+    "sha256": "707aa2b94d92d21e2eddb02b120237e56f3f6a69d677e5bd23bb8d76257f05fc"
+  },
+  {
+    "path": "docs/METODOLOGI.md",
+    "bytes": 7272,
+    "sha256": "aa7b877083045860b3bfa20c31265ca3425ff91e0c1576a1ee69a4ff07a46e54"
+  },
+  {
+    "path": "docs/TEMUAN_DAN_REKOMENDASI.md",
+    "bytes": 3946,
+    "sha256": "8b025fd4fe187a5cdaf351ceb1d3aa0497b71e25e791e0c9bb54c71b9f94b910"
+  },
+  {
+    "path": "docs/VERIFIKASI.json",
+    "bytes": 8581,
+    "sha256": "4bc55784018f07af42edae4dd6d884bc9924b319b8a370bae110ffc6b7f5f9a5"
+  }
+]

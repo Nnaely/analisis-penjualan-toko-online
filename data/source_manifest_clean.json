@@ -1,0 +1,49 @@
+{
+  "repository": "BakiTacos/Indonesia-Ecommerce-Sales-Shipping-Data-2023-2025",
+  "commit": "89a5eebb99d90ac13c511f2f7317b0767d1e862f",
+  "accessed": "2026-10-30",
+  "files": [
+    {
+      "path": "CLEAN/all_months_clean.xlsx",
+      "url": "https://raw.githubusercontent.com/BakiTacos/Indonesia-Ecommerce-Sales-Shipping-Data-2023-2025/89a5eebb99d90ac13c511f2f7317b0767d1e862f/CLEAN/all_months_clean.xlsx",
+      "sha256": "288fd5a8417edf4170ce9ae5da801dc6680284aa761369d699b3ba8e9505caa1",
+      "bytes": 1942615
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/BakiTacos/Indonesia-Ecommerce-Sales-Shipping-Data-2023-2025/89a5eebb99d90ac13c511f2f7317b0767d1e862f/README.md",
+      "sha256": "890c0d13a6670f493a10cf4b1d6ca564684b3b7856f6b87daff6e7e508d46f35",
+      "bytes": 4281
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/BakiTacos/Indonesia-Ecommerce-Sales-Shipping-Data-2023-2025/89a5eebb99d90ac13c511f2f7317b0767d1e862f/LICENSE",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    }
+  ],
+  "distribution": "Only anonymized CLEAN source; RAW_PUBLIC not redistributed.",
+  "license_note": "GitHub commit LICENSE: CC0 1.0. Kaggle metadata differs: CC BY-SA 4.0.",
+  "local_files": [
+    {
+      "path": "data/all_months_clean.xlsx",
+      "sha256": "288fd5a8417edf4170ce9ae5da801dc6680284aa761369d699b3ba8e9505caa1",
+      "bytes": 1942615
+    },
+    {
+      "path": "data/orders_source.csv",
+      "sha256": "00b725351599f6bf6b86271f237af24dc13919c90a004ce6536c22d7ba94673f",
+      "bytes": 3868583
+    },
+    {
+      "path": "data/orders_prepared.csv",
+      "sha256": "103a2d6cc0e5b53ec51d5050bee7b5c78fe0b585b9b0b2c1e96092100833f6fb",
+      "bytes": 5415144
+    },
+    {
+      "path": "LICENSE_DATA.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048
+    }
+  ]
+}
