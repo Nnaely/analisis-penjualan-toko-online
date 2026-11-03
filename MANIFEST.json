@@ -6,8 +6,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 7238,
-    "sha256": "d58978e53af4c4e3ca4fbbee324d6b3c83196668e58cfd434590bc7346b29353"
+    "bytes": 5976,
+    "sha256": "718b11e0db381a041778a6dee94eb9c0de2f3f11bf2522df08753a3769e1257f"
   },
   {
     "path": "LICENSE_DATA.txt",
@@ -68,5 +68,10 @@
     "path": "docs/VERIFIKASI.json",
     "bytes": 8581,
     "sha256": "4bc55784018f07af42edae4dd6d884bc9924b319b8a370bae110ffc6b7f5f9a5"
+  },
+  {
+    "path": "assets/alasan-pembatalan.png",
+    "bytes": 106291,
+    "sha256": "417885f0f1ef9775f4fa00e302c4bc09b76b0f9944ff196377f79ffd36bc325a"
   }
 ]
