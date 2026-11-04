@@ -1,24 +1,29 @@
-# Catatan untuk pengembangan dashboard
+# Catatan penggunaan dashboard
 
-Dashboard belum dibuat. Dokumen ini menyiapkan definisi dan kebutuhan data agar desain yang dipilih nanti dapat diterapkan tanpa mengubah arti metrik. Warna, tata letak, jenis grafik, dan interaksi visual menunggu referensi desain pemilik portofolio.
+Sheet Dashboard memakai susunan tiga kolom dengan palet `#001524`, `#15616D`, dan `#FFECD1`. Empat metrik utama dan lima grafik Excel native menyajikan hasil untuk tahun yang dipilih. Tabel Analisis tetap tersedia untuk menelusuri perhitungan lebih rinci.
 
-## Sumber dan kandidat metrik
+## Pilihan tahun dan cakupan
 
-Gunakan tabel Pesanan dengan grain satu baris per `order_id`. Kandidat metrik adalah jumlah pesanan, jumlah selesai, pembayaran pesanan selesai, rata-rata pembayaran selesai, tingkat pembatalan, unit pesanan selesai, dan jumlah pesanan belum final. Nominal pembayaran harus diberi satuan IDR dan disebut pembayaran pembeli, bukan pendapatan bersih.
+Ubah dropdown **AF4** pada Dashboard ke **2023, 2024, atau 2025**; pilihan awal adalah **2025**. Metrik, peringkat teratas, dan narasi menggunakan tahun yang sama. Tahun 2023 hanya mencakup Desember, 2024 mencakup Januari–Desember, dan 2025 mencakup Januari–November. Tidak ada filter harian. Bulan di luar cakupan sumber tidak berarti toko mencatat penjualan nol.
 
-Dimensi yang tersedia meliputi `bulan_laporan`, `status_kelompok`, `provinsi_bersih`, `metode_kelompok`, `kurir`, `kategori_analisis`, dan `alasan_kelompok`. Label asli tetap dapat dipakai untuk menelusuri kelompok. Kolom AA:AH menyediakan perhitungan pendukung. Pemetaan A:Z tersimpan sebagai nilai; perubahan referensi harus diterapkan kembali melalui tahap persiapan data.
+Periode mengikuti `bulan_laporan`, yang berasal dari nama berkas sumber dan tersimpan di kolom C sheet Pesanan. Sebanyak 1.980 waktu pesanan kosong tetap kosong; hari dan jam tidak diimputasi. Seluruh 250 pesanan Belum final berada pada November 2025, sehingga perubahan pembayaran selesai pada bulan itu perlu dibaca bersama status terbukanya.
 
-## Aturan periode dan filter
+## Metrik dan grafik
 
-Gunakan bulan laporan dari berkas sumber untuk cakupan bulanan yang lengkap. Sebanyak 1.980 tanggal pesanan kosong tetap tidak memiliki hari yang diketahui; fitur harian harus menampilkan pengecualian tersebut. Perbandingan tahunan wajib memakai rentang bulan yang sama. Seluruh 250 pesanan belum final berada pada November 2025 sehingga status terbuka perlu terlihat dalam pembacaan periode itu.
+Empat metrik adalah **total pesanan**, **pembayaran pesanan selesai**, **AOV pembayaran selesai**, dan **tingkat pembatalan**. AOV membagi pembayaran pesanan selesai dengan jumlah pesanan selesai. Tingkat pembatalan membagi pesanan Batal dengan seluruh pesanan pada tahun terpilih. Nilai pembayaran dapat mencakup ongkir dan penyesuaian sumber; nilai ini tidak digunakan sebagai pendapatan bersih.
 
-Untuk tingkat pembatalan, penyebutnya seluruh pesanan pada konteks filter yang sama. Filter status Batal tidak boleh secara tidak sengaja menjadikan tingkat pembatalan 100%. Kelompok Multi-kategori bersifat eksklusif: jangan mengulang nilai satu keranjang ke setiap kategori. Filter tabel pada workbook saat ini belum mengendalikan seluruh ringkasan Analisis.
+| Grafik | Ukuran yang ditampilkan |
+| --- | --- |
+| Donat status | Jumlah pesanan Selesai, Batal, dan Belum final. |
+| Batang lima provinsi teratas | Pembayaran pesanan selesai per provinsi. |
+| Kolom bulanan | Pembayaran pesanan selesai per bulan. |
+| Garis pembatalan bulanan | Pesanan Batal dibagi seluruh pesanan setiap bulan. |
+| Batang enam alasan pembatalan teratas | Jumlah pesanan Batal menurut kelompok alasan. |
 
-## Pemeriksaan sebelum dashboard dirilis
+Peringkat provinsi dan alasan pembatalan dihitung ulang untuk tahun terpilih. Grafik membaca formula pendukung pada Dashboard mulai baris 59. Formula tersebut memakai ringkasan bulanan Analisis dan data Pesanan. Filter atau sort pada tabel Pesanan tidak menggantikan pilihan tahun AF4 dan tidak otomatis memfilter seluruh ringkasan.
 
-1. Cocokkan jumlah dan pembayaran tanpa filter terhadap Analisis dan Kualitas.
-2. Uji kelompok tanpa pesanan selesai, termasuk Mitra Shopee: rata-rata pembayaran harus tidak tersedia, bukan kesalahan pembagian.
-3. Uji kelompok Pembayaran dibebaskan yang memiliki pesanan selesai dengan pembayaran nol; nol merupakan nilai valid.
-4. Periksa November 2025, dua bulan bertanggal kosong, Multi-kategori, dan kurir Tidak tercantum.
-5. Hitung rasio dari total pembilang dan penyebut, bukan rata-rata persentase kelompok.
-6. Pastikan tambahan periode memperluas tabel dan semua rentang formula; jalankan ulang rekonsiliasi setelah perubahan.
+## Pemeriksaan dan pembaruan
+
+Dashboard telah diuji di Microsoft Excel untuk pilihan tahun 2023, 2024, dan 2025. Jumlah pesanan, pembayaran, rata-rata, tingkat pembatalan, peringkat wilayah, dan alasan pembatalan cocok dengan kontrol sumber independen. Pengujian perubahan pembayaran, status, dan peringkat wilayah memperbarui hasil terkait. Grafik bulanan hanya memuat bulan yang tersedia pada sumber: 1, 12, dan 11 titik menurut tahun. Nilai pengujian dipulihkan; workbook utama tetap pada pilihan awal 2025.
+
+Saat data diperbarui, periksa rentang formula yang dibatasi, daftar provinsi dan kelompok alasan, serta semua area pendukung mulai baris 59. Hitung rasio dari jumlah pembilang dan penyebut yang sesuai; jangan merata-ratakan persentase bulanan. Pemetaan A:Z tetap merupakan hasil persiapan, sehingga perubahan Referensi harus diterapkan ulang pada data kerja.

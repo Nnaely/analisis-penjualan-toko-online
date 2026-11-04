@@ -336,5 +336,199 @@
       }
     ]
   },
-  "visual_review": "All 6 sheets rendered and reviewed; representative ranges include data and formula columns."
+  "visual_review": "All 6 sheets rendered and reviewed; representative ranges include data and formula columns.",
+  "dashboard": {
+    "added": "2026-11-04",
+    "verified": "2026-11-05",
+    "sheet": "Dashboard",
+    "year_control": "AF4",
+    "default_year": 2025,
+    "native_excel_tested": true,
+    "native_excel": {
+      "success": true,
+      "engine": "Microsoft Excel",
+      "version": "16.0",
+      "opened_read_only": true,
+      "saved_changes": false,
+      "year_control": "Dashboard!AF4",
+      "years": {
+        "2023": {
+          "orders": 444.0,
+          "payment": 23850125.0,
+          "aov": 67756.03693181818,
+          "cancel_rate": 0.2072072072072072,
+          "top_province": "Jawa Barat",
+          "top_reason": "Lainnya / berubah pikiran",
+          "monthly_checked": 12
+        },
+        "2024": {
+          "orders": 10236.0,
+          "payment": 545486973.0,
+          "aov": 62029.44882874687,
+          "cancel_rate": 0.14087534193044157,
+          "top_province": "Jawa Barat",
+          "top_reason": "Lainnya / berubah pikiran",
+          "monthly_checked": 12
+        },
+        "2025": {
+          "orders": 10168.0,
+          "payment": 476213636.0,
+          "aov": 55232.3864532591,
+          "cancel_rate": 0.12745869394177814,
+          "top_province": "Jawa Barat",
+          "top_reason": "Ubah pesanan",
+          "monthly_checked": 12
+        }
+      },
+      "tests": [
+        "Opened disposable read-only copy and calculated full workbook",
+        "Five native charts, three-year list validation, and no external links",
+        "Year 2023 KPIs, status totals, top five provinces, top six cancellation reasons, and twelve-month coverage",
+        "Year 2023 native payment and cancellation chart series expose 1 covered months with correct categories and source-matched values",
+        "Year 2024 KPIs, status totals, top five provinces, top six cancellation reasons, and twelve-month coverage",
+        "Year 2024 native payment and cancellation chart series expose 12 covered months with correct categories and source-matched values",
+        "Year 2025 KPIs, status totals, top five provinces, top six cancellation reasons, and twelve-month coverage",
+        "Year 2025 native payment and cancellation chart series expose 11 covered months with correct categories and source-matched values",
+        "Invalid year and blank selection expose Pilih tahun; 2025 restored",
+        "Source payment +1000 and Selesai to Batal edits propagate to dashboard; originals restored",
+        "Out-of-top-five province becomes rank one after +1bn source edit; originals and default year restored",
+        "All native chart series bind to workbook cells without external links"
+      ],
+      "charts": [
+        {
+          "index": 1,
+          "type": -4120,
+          "series": [
+            "=SERIES(\"Pesanan\",Dashboard!$H$83:$H$85,Dashboard!$I$83:$I$85,1)"
+          ]
+        },
+        {
+          "index": 2,
+          "type": 57,
+          "series": [
+            "=SERIES(\"Pembayaran selesai\",Dashboard!$A$83:$A$87,Dashboard!$B$83:$B$87,1)"
+          ]
+        },
+        {
+          "index": 3,
+          "type": 51,
+          "series": [
+            "=SERIES(\"Pembayaran selesai\",Dashboard!DashBulan,Dashboard!DashBayar,1)"
+          ]
+        },
+        {
+          "index": 4,
+          "type": 4,
+          "series": [
+            "=SERIES(\"Pembatalan\",Dashboard!DashBulan,Dashboard!DashPembatalan,1)"
+          ]
+        },
+        {
+          "index": 5,
+          "type": 57,
+          "series": [
+            "=SERIES(\"Pesanan batal\",Dashboard!$D$83:$D$88,Dashboard!$E$83:$E$88,1)"
+          ]
+        }
+      ],
+      "all_original_values_restored": true,
+      "elapsed_seconds": 9.33
+    },
+    "artifact": {
+      "success": true,
+      "selectedYear": 2025,
+      "charts": 5,
+      "yearControl": "AF4",
+      "elapsedSeconds": 138.122,
+      "checks": [
+        "Selected year headline values",
+        "Dynamic province top five",
+        "Formula error scan",
+        "Dashboard rendered"
+      ],
+      "palette": {
+        "navy": "#001524",
+        "teal": "#15616D",
+        "cream": "#FFECD1",
+        "white": "#FFFFFF",
+        "muted": "#597079",
+        "line": "#DAE3DF"
+      }
+    },
+    "preservation": {
+      "success": true,
+      "chart_count": 5,
+      "table_count": 18,
+      "original_sheet_checks": {
+        "Analisis": {
+          "source_cells": 2340,
+          "target_cells": 2340,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        },
+        "Pesanan": {
+          "source_cells": 709036,
+          "target_cells": 709036,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        },
+        "Referensi": {
+          "source_cells": 1224,
+          "target_cells": 1224,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        },
+        "Kualitas": {
+          "source_cells": 216,
+          "target_cells": 216,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        },
+        "Kamus_Data": {
+          "source_cells": 252,
+          "target_cells": 252,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        },
+        "Dokumentasi": {
+          "source_cells": 126,
+          "target_cells": 126,
+          "content_changes": 0,
+          "style_changes": 0,
+          "feature_changes": [],
+          "examples": {
+            "content": [],
+            "style": []
+          }
+        }
+      },
+      "external_links": [],
+      "problems": []
+    }
+  }
 }

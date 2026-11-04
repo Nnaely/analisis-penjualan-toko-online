@@ -6,9 +6,17 @@ Sebanyak **37,31% pembatalan** dalam dataset tercatat karena perubahan pesanan a
 
 Proyek ini mengolah data pesanan marketplace Indonesia menjadi analisis Excel yang menelusuri pertumbuhan pembayaran, konsentrasi wilayah, serta pola pembatalan. Setiap ringkasan dilengkapi definisi metrik dan dapat ditelusuri ke data per pesanan.
 
+Dashboard Excel menyajikan empat metrik utama dan lima grafik yang mengikuti pilihan tahun. Tampilan tiga kolom memadukan ringkasan status, tren bulanan, kontribusi wilayah, dan alasan pembatalan.
+
 **[Unduh workbook Excel](https://github.com/Nnaely/analisis-penjualan-toko-online/raw/refs/heads/main/Portofolio_Penjualan_Ecommerce_Indonesia.xlsx)** · [Temuan lengkap](docs/TEMUAN_DAN_REKOMENDASI.md) · [Metodologi](docs/METODOLOGI.md)
 
-## Ringkasan data
+## Dashboard
+
+![Dashboard penjualan Excel dengan ringkasan metrik, tren bulanan, wilayah, dan pembatalan](assets/dashboard.png)
+
+Pilih **2023, 2024, atau 2025** pada dropdown tahun di sheet Dashboard; pilihan awal adalah **2025**. Metrik, peringkat provinsi dan alasan pembatalan, serta narasi mengikuti tahun terpilih. Cakupan 2023 hanya Desember, sedangkan 2025 hanya Januari–November. Detail penggunaan tersedia pada [catatan dashboard](docs/CATATAN_DASHBOARD.md).
+
+## Ringkasan seluruh data
 
 | Metrik | Hasil |
 | --- | ---: |
@@ -29,9 +37,14 @@ Dari 2.830 pesanan batal, **671** tercatat sebagai Ubah pesanan dan **385** seba
 
 **Usulan:** tinjau kejelasan pilihan produk, konfirmasi alamat, dan alur penyelesaian pembayaran. Kelompok alasan ini memberi titik awal pemeriksaan; dampak perbaikannya perlu diuji dengan data operasional berikutnya.
 
+<details>
+<summary>Lihat tabel alasan pembatalan dari sheet Analisis</summary>
+
 ![Tabel alasan pembatalan dan prioritas pemeriksaan pada sheet Analisis](assets/alasan-pembatalan.png)
 
-*Cuplikan tabel dari workbook Excel. Versi saat ini mencakup analisis tabel dan dokumentasi; dashboard belum ditambahkan.*
+*Cuplikan tabel pendukung untuk menelusuri temuan ke perhitungan workbook.*
+
+</details>
 
 ### 2. Tiga provinsi menyumbang 56,16% pembayaran selesai
 
@@ -51,16 +64,18 @@ Pembayaran pesanan selesai Januari–Oktober 2025 mencapai **Rp441.926.222**, di
 | --- | --- |
 | Persiapan data | Python untuk normalisasi status, wilayah, metode pembayaran, kurir, kategori, dan alasan pembatalan. |
 | Analisis Excel | `SUMIFS`, `COUNTIFS`, dan formula per pesanan untuk menghitung metrik bulanan serta membandingkan kelompok bisnis. |
+| Dashboard Excel | Dropdown tahun, empat metrik utama, lima grafik Excel native, peringkat dinamis, dan narasi tahun terpilih. |
 | Pemodelan kategori | 1.504 keranjang campuran masuk kelompok Multi-kategori agar nilai pembayaran tidak dihitung berulang. |
 | Pemeriksaan kualitas | Rekonsiliasi jumlah pesanan dan nominal, pemeriksaan duplikat, tanggal kosong, serta anomali subsidi ongkir. |
 | Validasi | Perhitungan ulang serta uji perubahan pembayaran, status pesanan, dan indikator tanggal kosong di Microsoft Excel. |
 
-Workbook terdiri dari **6 sheet dan 18 tabel Excel**. Rincian pengujian tersedia pada [laporan verifikasi](docs/VERIFIKASI.json), sedangkan aturan persiapan data dicatat dalam [log pengolahan](docs/LOG_PERSIAPAN_DATA.csv).
+Workbook terdiri dari **7 sheet**, dengan tabel data dan analisis yang mendukung dashboard. Rincian pengujian tersedia pada [laporan verifikasi](docs/VERIFIKASI.json), sedangkan aturan persiapan data dicatat dalam [log pengolahan](docs/LOG_PERSIAPAN_DATA.csv). Dashboard juga telah diuji di Microsoft Excel untuk perubahan tahun, input pembayaran, status, dan peringkat wilayah.
 
 ## Isi workbook
 
 | Sheet | Isi |
 | --- | --- |
+| Dashboard | Pilihan tahun, empat metrik utama, lima grafik, peringkat dinamis, dan narasi ringkas. |
 | Analisis | Metrik utama, tren bulanan, perbandingan wilayah, kategori, pembayaran, kurir, dan alasan pembatalan. |
 | Pesanan | 20.848 baris pesanan beserta kolom perhitungan Excel. |
 | Referensi | Pemetaan nilai dan identitas sumber. |

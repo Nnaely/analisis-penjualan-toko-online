@@ -1,13 +1,13 @@
 [
   {
     "path": "Portofolio_Penjualan_Ecommerce_Indonesia.xlsx",
-    "bytes": 4354723,
-    "sha256": "f560b1ff7b90c41b3c7502ca41616f64bfa0e13d2f0ace4352daa87bcffb1309"
+    "bytes": 4232284,
+    "sha256": "cf66881a859f9eb338b665316345b26d6955a9d2ddfedebed378260f05e88968"
   },
   {
     "path": "README.md",
-    "bytes": 5976,
-    "sha256": "718b11e0db381a041778a6dee94eb9c0de2f3f11bf2522df08753a3769e1257f"
+    "bytes": 7087,
+    "sha256": "3e4448f56698f404180d20e3b5be1914173a51bcd281895ea3367e71d0625ec4"
   },
   {
     "path": "LICENSE_DATA.txt",
@@ -41,8 +41,8 @@
   },
   {
     "path": "docs/CATATAN_DASHBOARD.md",
-    "bytes": 2516,
-    "sha256": "4c4860bb4bf16669a764ced8242fd8fa93ba4c1fff678eb46c55be8d08bcff91"
+    "bytes": 3086,
+    "sha256": "90bdd5eb5397d7e2308b0e9c7a9de88792014b2eb62b2cc1d174765189e4748a"
   },
   {
     "path": "docs/LANGKAH_EXCEL.md",
@@ -56,8 +56,8 @@
   },
   {
     "path": "docs/METODOLOGI.md",
-    "bytes": 7272,
-    "sha256": "aa7b877083045860b3bfa20c31265ca3425ff91e0c1576a1ee69a4ff07a46e54"
+    "bytes": 9695,
+    "sha256": "d750b149389ac0984705c1461627cfa918b43dfba7c209ef9682681fcb201193"
   },
   {
     "path": "docs/TEMUAN_DAN_REKOMENDASI.md",
@@ -66,12 +66,17 @@
   },
   {
     "path": "docs/VERIFIKASI.json",
-    "bytes": 8581,
-    "sha256": "4bc55784018f07af42edae4dd6d884bc9924b319b8a370bae110ffc6b7f5f9a5"
+    "bytes": 14288,
+    "sha256": "af38e2d4d9b581bf3a1aa7f42cc84bedc4cd9c18a4f1028bd9c0c08a876044f0"
   },
   {
     "path": "assets/alasan-pembatalan.png",
     "bytes": 106291,
     "sha256": "417885f0f1ef9775f4fa00e302c4bc09b76b0f9944ff196377f79ffd36bc325a"
+  },
+  {
+    "path": "assets/dashboard.png",
+    "bytes": 203579,
+    "sha256": "759c956caf52ee79e038672887378cfefd481581c5c29452345eb299199de619"
   }
 ]
