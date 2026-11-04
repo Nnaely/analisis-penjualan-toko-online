@@ -1,6 +1,6 @@
 # Catatan penggunaan dashboard
 
-Sheet Dashboard memakai susunan tiga kolom dengan palet `#001524`, `#15616D`, dan `#FFECD1`. Empat metrik utama dan lima grafik Excel native menyajikan hasil untuk tahun yang dipilih. Tabel Analisis tetap tersedia untuk menelusuri perhitungan lebih rinci.
+Sheet Dashboard memakai susunan tiga kolom dengan latar hijau `#15616D`, panel grafik dan kartu angka krem `#FFECD1`, serta teks hitam `#000000`. Empat metrik utama dan lima grafik Excel native menyajikan hasil untuk tahun yang dipilih. Tabel Analisis tetap tersedia untuk menelusuri perhitungan lebih rinci.
 
 ## Pilihan tahun dan cakupan
 
