@@ -1,8 +1,8 @@
 [
   {
     "path": "Portofolio_Penjualan_Ecommerce_Indonesia.xlsx",
-    "bytes": 4232651,
-    "sha256": "b27b9547ab6de83d86150d6203a1fca4e079bb65d2e73010cf7f30f5d82e4732"
+    "bytes": 4233330,
+    "sha256": "3c261abc974702223e170fc29899f3abe766fbb51f48cc2ca0070354c7f859e3"
   },
   {
     "path": "README.md",
@@ -41,8 +41,8 @@
   },
   {
     "path": "docs/CATATAN_DASHBOARD.md",
-    "bytes": 3139,
-    "sha256": "8de43a0d0634d233a9921aebdb755c7c3d1f131a69ab0668c0f17e695bac5bfb"
+    "bytes": 3228,
+    "sha256": "74e5deda73051600716f505073b0ce87d3b95857b6dee9980511c678d6db47b8"
   },
   {
     "path": "docs/LANGKAH_EXCEL.md",
@@ -66,8 +66,8 @@
   },
   {
     "path": "docs/VERIFIKASI.json",
-    "bytes": 14730,
-    "sha256": "4fa41a14214eb55b38539525db0df35a241167ce6e19f1ecf3cad6691dae16e9"
+    "bytes": 15384,
+    "sha256": "269c9a0e48787f3c4028d113865387a6388c4301d77ece9e7a7a437f06f12113"
   },
   {
     "path": "assets/alasan-pembatalan.png",
@@ -76,7 +76,7 @@
   },
   {
     "path": "assets/dashboard.png",
-    "bytes": 204797,
-    "sha256": "bdf0694cec677383448bcae0e0c5f30dc418fa6bee499e3175d27085908f58a7"
+    "bytes": 212492,
+    "sha256": "82e7c5f9ea7ff7466327924e88e3eff2a6277d1de5f1b6dcefa8ed2d3e2fddde"
   }
 ]

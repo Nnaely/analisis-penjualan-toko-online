@@ -432,7 +432,7 @@
         }
       ],
       "all_original_values_restored": true,
-      "elapsed_seconds": 10.03
+      "elapsed_seconds": 8.97
     },
     "artifact": {
       "success": true,
@@ -447,9 +447,19 @@
         "Dashboard rendered"
       ],
       "palette": {
-        "background": "#15616D",
-        "panels": "#FFECD1",
-        "text": "#000000"
+        "name": "Netral dengan aksen hijau",
+        "background": "#F3F5F7",
+        "panels": "#FFFFFF",
+        "text": "#24313C",
+        "muted": "#667582",
+        "accent": "#287866",
+        "accentSoft": "#E8F3EE",
+        "secondary": "#7C8D9C",
+        "pending": "#D9B26C",
+        "grid": "#E4E9EE",
+        "border": "#CDD6DF",
+        "line": "#526B80",
+        "insights": "#EDF3F6"
       },
       "colorEdit": {
         "checked": "2026-11-05",
@@ -536,9 +546,21 @@
     "color_revision": {
       "checked": "2026-11-05",
       "success": true,
-      "background": "#15616D",
-      "panels": "#FFECD1",
-      "text": "#000000",
+      "palette": {
+        "name": "Netral dengan aksen hijau",
+        "background": "#F3F5F7",
+        "panels": "#FFFFFF",
+        "text": "#24313C",
+        "muted": "#667582",
+        "accent": "#287866",
+        "accentSoft": "#E8F3EE",
+        "secondary": "#7C8D9C",
+        "pending": "#D9B26C",
+        "grid": "#E4E9EE",
+        "border": "#CDD6DF",
+        "line": "#526B80",
+        "insights": "#EDF3F6"
+      },
       "all_sheet_values_and_formulas_unchanged": true,
       "dashboard_style_changes": 1924,
       "scope": "Colors and control/doughnut outlines. Chart bindings, layout and controls preserved."
